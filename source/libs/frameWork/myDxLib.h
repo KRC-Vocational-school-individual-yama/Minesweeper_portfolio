@@ -143,9 +143,6 @@ namespace DxLib {
 	inline const VECTOR operator +(const VECTOR& a, const VECTOR& b) {
 		return VAdd(a, b);
 	}
-	inline VECTOR& operator +=(VECTOR& a, const VECTOR& b) {
-		return a=a+ b;
-	}
 	inline const VECTOR operator -(const VECTOR& a, const VECTOR& b) {
 		return VSub(a, b);
 	}

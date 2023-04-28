@@ -36,11 +36,10 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	SetUseMaskScreenFlag(FALSE);
 		
 	//SetAlwaysRunFlag(TRUE);//ウィンドウがアクティブではない状態でも動く
-	SetUseZBuffer3D(TRUE)	;
-	SetWriteZBuffer3D(TRUE);
+	//SetUseZBuffer3D(TRUE)	;
+	//SetWriteZBuffer3D(TRUE);
 		
-	SetUseLighting(FALSE);//ライティング計算を消す
-
+	
 	APP::Init()				;//最初に１回呼ぶ
 	//メイン処理
 	while (true) {

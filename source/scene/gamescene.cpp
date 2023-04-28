@@ -4,16 +4,18 @@
 #include"../libs/frameWork/scenemanager.h"
 #include"../object/gameSceneObject.h"
 #include"../object/board.h"
-#include"../object/freeCamera.h"
-
+#include"../object/gameClear.h"
+#include"../object/gameOver.h"
 
 GameScene::GameScene(){
 	SetBackgroundColor(0xe5,0xff,0xff);
 
-	//Create<GameSceneObject>("gameSceneObject");
-	Create<Board>("Board");
-	//Create<FreeCamera>("freeCamera");
+	//https://minesweeperonline.com/#200
 
+	//Create<GameSceneObject>("gameSceneObject");
+	Create<Board>("board");
+	Create<GameClear>("gameClear");
+	Create<GameOver>("gameOver");
 }
 
 GameScene::~GameScene(){
@@ -43,4 +45,10 @@ void GameScene::Update(){
 }
 void GameScene::Draw() {
 	Scene::Draw();
+
+	
+#ifdef _DEBUG 
+	//DrawFormatString(100,100,0x0,"GameScene\nEscape‚Å–ß‚é");
+#endif
+
 }

@@ -16,11 +16,20 @@
     <ClCompile Include="source\scene\bootScene.cpp">
       <Filter>3_Scenes\TestScenes</Filter>
     </ClCompile>
+    <ClCompile Include="source\component\titleName.cpp">
+      <Filter>5_Component\Title_component</Filter>
+    </ClCompile>
+    <ClCompile Include="source\component\titleSceneChange.cpp">
+      <Filter>5_Component\Title_component</Filter>
+    </ClCompile>
     <ClCompile Include="source\object\bootTestObject.cpp">
       <Filter>4_Objects\TestObject</Filter>
     </ClCompile>
     <ClCompile Include="source\object\titleobject.cpp">
       <Filter>4_Objects\TitleScene_Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libs\frameWork\object.cpp">
+      <Filter>2_libs\frameWorks</Filter>
     </ClCompile>
     <ClCompile Include="source\libs\frameWork\scene.cpp">
       <Filter>2_libs\frameWorks</Filter>
@@ -49,6 +58,9 @@
     <ClCompile Include="source\object\gameSceneObject.cpp">
       <Filter>4_Objects\GameScene_objects</Filter>
     </ClCompile>
+    <ClCompile Include="source\component\gameEase.cpp">
+      <Filter>5_Component\Game_component</Filter>
+    </ClCompile>
     <ClCompile Include="source\libs\common\easeing.cpp">
       <Filter>2_libs\commons</Filter>
     </ClCompile>
@@ -56,10 +68,17 @@
       <Filter>2_libs\commons\fpsController</Filter>
     </ClCompile>
     <ClCompile Include="source\component\sound.cpp">
-      <Filter>4_Objects\CommonScene_objects</Filter>
+      <Filter>5_Component\Common_component\soundLoad</Filter>
     </ClCompile>
-    <ClCompile Include="source\object\board.cpp" />
-    <ClCompile Include="source\object\freeCamera.cpp" />
+    <ClCompile Include="source\object\board.cpp">
+      <Filter>4_Objects\GameScene_objects</Filter>
+    </ClCompile>
+    <ClCompile Include="source\object\gameClear.cpp">
+      <Filter>4_Objects\GameScene_objects</Filter>
+    </ClCompile>
+    <ClCompile Include="source\object\gameOver.cpp">
+      <Filter>4_Objects\GameScene_objects</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\main\app.h">
@@ -76,6 +95,12 @@
     </ClInclude>
     <ClInclude Include="source\scene\bootScene.h">
       <Filter>3_Scenes\TestScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="source\component\titleName.h">
+      <Filter>5_Component\Title_component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\component\titleSceneChange.h">
+      <Filter>5_Component\Title_component</Filter>
     </ClInclude>
     <ClInclude Include="source\object\bootTestObject.h">
       <Filter>4_Objects\TestObject</Filter>
@@ -125,6 +150,9 @@
     <ClInclude Include="source\object\gameSceneObject.h">
       <Filter>4_Objects\GameScene_objects</Filter>
     </ClInclude>
+    <ClInclude Include="source\component\gameEase.h">
+      <Filter>5_Component\Game_component</Filter>
+    </ClInclude>
     <ClInclude Include="source\libs\common\easeing.h">
       <Filter>2_libs\commons</Filter>
     </ClInclude>
@@ -138,20 +166,19 @@
       <Filter>2_libs\commons</Filter>
     </ClInclude>
     <ClInclude Include="source\component\sound.h">
-      <Filter>4_Objects\CommonScene_objects</Filter>
+      <Filter>5_Component\Common_component\soundLoad</Filter>
     </ClInclude>
     <ClInclude Include="source\object\board.h">
       <Filter>4_Objects\GameScene_objects</Filter>
     </ClInclude>
-    <ClInclude Include="source\object\freeCamera.h" />
+    <ClInclude Include="source\object\gameClear.h">
+      <Filter>4_Objects\GameScene_objects</Filter>
+    </ClInclude>
+    <ClInclude Include="source\object\gameOver.h">
+      <Filter>4_Objects\GameScene_objects</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="3_Scenes">
-      <UniqueIdentifier>{a086f3e0-521a-46db-bd1c-6813f91fe081}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3_Scenes\TestScenes">
-      <UniqueIdentifier>{2706f31c-eba3-458f-844b-309bd1c7d970}</UniqueIdentifier>
-    </Filter>
     <Filter Include="1_mains">
       <UniqueIdentifier>{61e657b5-09cb-41dd-9b2f-2b22b4e1c4be}</UniqueIdentifier>
     </Filter>
@@ -179,6 +206,12 @@
     <Filter Include="2_libs\frameWorks">
       <UniqueIdentifier>{e1e52795-9924-42c4-83fa-4680c7485971}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3_Scenes">
+      <UniqueIdentifier>{a086f3e0-521a-46db-bd1c-6813f91fe081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3_Scenes\TestScenes">
+      <UniqueIdentifier>{2706f31c-eba3-458f-844b-309bd1c7d970}</UniqueIdentifier>
+    </Filter>
     <Filter Include="4_Objects">
       <UniqueIdentifier>{768e2e3c-9694-4f87-9dde-f772f96706ca}</UniqueIdentifier>
     </Filter>
@@ -193,6 +226,21 @@
     </Filter>
     <Filter Include="4_Objects\TestObject">
       <UniqueIdentifier>{7f56394e-989a-40bd-98e8-db76b50e689a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5_Component">
+      <UniqueIdentifier>{1b831619-87c8-42d6-9acc-7902bc798226}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5_Component\Title_component">
+      <UniqueIdentifier>{cde4bba9-9bd9-4e3f-84c3-04e55b535a97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5_Component\Game_component">
+      <UniqueIdentifier>{3fab075f-8c15-45d3-ae94-fc8f13b98cfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5_Component\Common_component">
+      <UniqueIdentifier>{04a44ea5-e027-4b35-a016-9df684d3c37a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5_Component\Common_component\soundLoad">
+      <UniqueIdentifier>{bfe1f814-bc17-4550-b4ab-3f2fff54d61b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

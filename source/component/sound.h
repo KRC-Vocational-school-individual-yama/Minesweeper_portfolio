@@ -1,11 +1,11 @@
 #pragma once
-#include"../libs/frameWork/object.h"
+#include"../libs/frameWork/component.h"
 #include<unordered_map>
 #include<string>
 
-class Sound :public Object {
+class Sound :public Component {
 public:
-	Sound(Scene* sc);
+	Sound(Object*obj);
 	~Sound()			override;
 	void Init()		override{}
 	void Update()	override{}

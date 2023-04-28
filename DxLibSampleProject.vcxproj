@@ -11,7 +11,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="source\component\gameEase.cpp" />
     <ClCompile Include="source\component\sound.cpp" />
+    <ClCompile Include="source\component\titleName.cpp" />
+    <ClCompile Include="source\component\titleSceneChange.cpp" />
     <ClCompile Include="source\libs\common\csvReader.cpp" />
     <ClCompile Include="source\libs\common\easeing.cpp" />
     <ClCompile Include="source\libs\common\fpstimer.cpp" />
@@ -19,6 +22,7 @@
     <ClCompile Include="source\libs\common\keyManager.cpp" />
     <ClCompile Include="source\libs\common\oneCharacterSpacing.cpp" />
     <ClCompile Include="source\libs\common\save.cpp" />
+    <ClCompile Include="source\libs\frameWork\object.cpp" />
     <ClCompile Include="source\libs\frameWork\scene.cpp" />
     <ClCompile Include="source\libs\frameWork\scenechanger.cpp" />
     <ClCompile Include="source\libs\frameWork\scenemanager.cpp" />
@@ -26,7 +30,8 @@
     <ClCompile Include="source\main\winmain.cpp" />
     <ClCompile Include="source\object\board.cpp" />
     <ClCompile Include="source\object\bootTestObject.cpp" />
-    <ClCompile Include="source\object\freeCamera.cpp" />
+    <ClCompile Include="source\object\gameClear.cpp" />
+    <ClCompile Include="source\object\gameOver.cpp" />
     <ClCompile Include="source\object\gameSceneObject.cpp" />
     <ClCompile Include="source\object\titleobject.cpp" />
     <ClCompile Include="source\scene\bootScene.cpp" />
@@ -35,6 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\component\sound.h" />
+    <ClInclude Include="source\component\titleName.h" />
+    <ClInclude Include="source\component\titleSceneChange.h" />
+    <ClInclude Include="source\component\gameEase.h" />
     <ClInclude Include="source\libs\common\button.h" />
     <ClInclude Include="source\libs\common\colorhsv.h" />
     <ClInclude Include="source\libs\common\csvReader.h" />
@@ -55,10 +63,11 @@
     <ClInclude Include="source\main\app.h" />
     <ClInclude Include="source\main\config.h" />
     <ClInclude Include="source\object\bootTestObject.h" />
-    <ClInclude Include="source\object\freeCamera.h" />
     <ClInclude Include="source\object\titleobject.h" />
     <ClInclude Include="source\object\gameSceneObject.h" />
     <ClInclude Include="source\object\board.h" />
+    <ClInclude Include="source\object\gameClear.h" />
+    <ClInclude Include="source\object\gameOver.h" />
     <ClInclude Include="source\scene\bootScene.h" />
     <ClInclude Include="source\scene\gamescene.h" />
     <ClInclude Include="source\scene\titlescene.h" />
